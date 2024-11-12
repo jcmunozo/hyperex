@@ -1,18 +1,10 @@
 defmodule Hyperex do
-  @moduledoc """
-  Documentation for `Hyperex`.
-  """
+  use Application
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Hyperex.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    children = [
+      Plug.Adapters.Cowboy.child_spec(:http, Web.Router, [], [port:4001])
+    ]
+    Supervisor.start_link(children, strategy: :one_for_one)
   end
 end
