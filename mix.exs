@@ -21,7 +21,7 @@ defmodule Hyperex.MixProject do
   defp deps do
     [
       {:plug, "~>1.4"},
-      {:cowboy, "~>1.1"},
+      {:plug_cowboy, "~> 1.0"},
     ]
   end
 end

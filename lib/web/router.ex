@@ -5,10 +5,12 @@ defmodule Web.Router do
   plug :dispatch
 
   get "/elixir" do
-    send_resp(conn, 200, "I <3 ELixir")
+    conn
+    |> put_resp_header("content-type","text/html; charset=utf-8")
+    |> send_file(200, "lib/web/elixir.html")
   end
 
-  match do
+  match _ do
     send_resp(conn, 404, "This is not the page you are looking for.")
   end
 end
