@@ -1,6 +1,6 @@
 # Hyperex
 
-ap for p
+app for
 
 **TODO: Add description**
 
