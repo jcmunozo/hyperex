@@ -1,6 +1,5 @@
 # Hyperex
 
-add app for
 
 **TODO: Add description**
 
