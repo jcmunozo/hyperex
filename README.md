@@ -1,6 +1,5 @@
 # Hyperex
 
-esti es tuna 
 **TODO: Add description**
 
 ## Installation
