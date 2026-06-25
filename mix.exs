@@ -13,15 +13,14 @@ defmodule Hyperex.MixProject do
 
   # Run "mix help compile.app" to learn about applications.
   def application do
-    [mod: {Hyperex, []},
-    extra_applications: [:logger]]
+    [mod: {Hyperex, []}, extra_applications: [:logger]]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:plug, "~>1.4"},
-      {:plug_cowboy, "~> 1.0"},
+      {:plug, "~> 1.16"},
+      {:plug_cowboy, "~> 2.7"}
     ]
   end
 end
