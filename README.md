@@ -1,6 +1,6 @@
 # Hyperex
 
-THis A tiny Elixir web app (Plug + Cowboy, **no Phoenix**) built as a hands-on way to
+This A tiny Elixir web app (Plug + Cowboy, **no Phoenix**) built as a hands-on way to
 learn the basics of Elixir and to *see* its two headline strengths — **massive
 concurrency** and **fault tolerance** — in action. It serves HTTP on **port 4001**.
 
